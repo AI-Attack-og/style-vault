@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b0c12">
+  <meta name="description" content="100 website aesthetics, live transitions, and copyable prompts for coding agents.">
+  <title>Style Vault | 100 web design recipes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="presets.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+ <div class="app-shell">
+  <aside class="rail" id="rail" aria-label="Design preset navigation">
+   <div class="brand"><div class="brand-icon" aria-hidden="true">S<span>✦</span></div><div><strong>STYLE VAULT</strong><small>THE DESIGN PLAYGROUND</small></div><button class="icon-btn mobile-close" id="closeRail" aria-label="Close styles menu">✕</button></div>
+   <div class="rail-content">
+    <div class="eyebrow muted">YOUR CREATIVE LIBRARY <span class="count-bubble">100</span></div>
+    <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="Search 100 styles..." aria-label="Search styles"><kbd>/</kbd></label>
+    <div class="filters" id="filters" aria-label="Filter styles"></div>
+    <div class="preset-heading"><span>PRESETS <span id="resultCount">100</span></span><button class="text-btn" id="randomBtn" title="Surprise me with a random style">↝ Shuffle</button></div>
+    <div class="preset-list" id="presetList"></div>
+   </div>
+   <div class="rail-bottom"><div class="hint"><span class="hint-spark">✧</span><div><strong>Find your next aesthetic.</strong><p>Explore a theme. Copy the prompt. Build something remarkable.</p></div></div><div class="bottom-line">100 PRESETS <span>•</span> ZERO FRAMEWORKS <span>•</span> OPEN SOURCE READY</div></div>
+  </aside>
+  <main class="workspace">
+   <header class="topbar"><div class="topbar-left"><button class="icon-btn hamburger" id="openRail" aria-label="Open styles menu">☰</button><span class="breadcrumbs">THE COLLECTION <span>/</span> <b id="crumb">Midnight Aurora</b></span></div><div class="topbar-right"><span class="status-dot"></span><span class="status-text">LIVE PREVIEW</span><button class="top-action" id="favoriteBtn" title="Save favorite">♡ <span>Save</span></button><button class="top-action prominent" id="copyPromptTop">↗ <span>Copy agent prompt</span></button></div></header>
+   <div class="page-inner">
+    <section class="intro"><div><div class="intro-kicker"><span class="tiny-line"></span> THE INTERACTIVE DESIGN LIBRARY / VOL. 01</div><h1>One hundred ways to <em>stand out.</em></h1><p>Pick a style. Watch the whole page transform. Copy the design recipe into your favorite coding agent.</p></div><div class="intro-counter"><b id="counterCurrent">01</b><span>/ 100 STYLES</span></div></section>
+    <div class="stage-heading"><div class="stage-tab"><span class="pulse-dot"></span> INTERACTIVE CANVAS <span class="tab-id" id="tabId">001</span></div><div class="stage-tools"><button class="mini-tool" id="replayBtn">↻ <span>Replay motion</span></button><button class="mini-tool" id="motionBtn" aria-pressed="false">◉ <span>Pause motion</span></button></div></div>
+    <section class="preview" id="preview" aria-live="polite">
+      <div class="preview-grain"></div><div class="preview-orb orb-one"></div><div class="preview-orb orb-two"></div><div class="preview-grid"></div>
+      <div class="preview-shell"><div class="site-nav"><div class="site-logo"><div class="logo-glyph">✳</div><span>forma<span class="accent-mark">.</span></span></div><nav class="site-links"><a href="#features">Platform</a><a href="#features">Solutions</a><a href="#features">About</a></nav><button class="site-nav-cta" id="siteNavCta">Explore <span>↗</span></button></div>
+       <div class="site-content" id="siteContent"><div class="site-hero"><div class="hero-copy"><div class="hero-eyebrow"><span class="eyebrow-symbol">✦</span> IMAGINE WHAT'S NEXT <span class="eyebrow-number">/ 2026</span></div><h2>Design that <span>moves</span> you forward<span class="hero-dot">.</span></h2><p>We build beautiful digital experiences for brands ready to do things differently. A little more imagination. A lot more impact.</p><div class="hero-buttons"><button class="hero-primary" id="demoCta">Let's make something <span>↗</span></button><button class="hero-secondary" id="demoSecondary">Discover our work <span>↗</span></button></div><div class="hero-social"><div class="avatar-stack"><span>AL</span><span>MK</span><span>JS</span></div><small>MADE FOR THE CURIOUS<br><strong>Join the creative movement</strong></small></div></div>
+        <div class="hero-visual"><div class="visual-inner"><div class="visual-ring ring-a"></div><div class="visual-ring ring-b"></div><div class="visual-core"><span>✳</span></div><div class="visual-float visual-top"><span class="float-icon">✦</span><span>UNLIMITED<br><strong>POSSIBILITIES</strong></span></div><div class="visual-float visual-bottom"><span class="float-mini">● ● ●</span><span>ALWAYS EVOLVING <b>↗</b></span></div></div><div class="visual-caption"><span>FIG 01 / INFINITE IDEAS</span><span>SCROLL TO EXPLORE ↓</span></div></div></div>
+       <div class="feature-section" id="features"><div class="feature-label"><span>01 / THE DETAILS</span><span>WHAT MAKES IT DIFFERENT ↗</span></div><div class="feature-grid"><article class="feature-card"><span class="feature-icon">✺</span><b>Thoughtfully made.</b><p>Every detail serves a purpose, and every interaction tells a story.</p><span class="feature-arrow">↗</span></article><article class="feature-card"><span class="feature-icon">◈</span><b>Built to inspire.</b><p>Distinctive visuals, precise rhythm, and a little unexpected magic.</p><span class="feature-arrow">↗</span></article><article class="feature-card"><span class="feature-icon">↗</span><b>Always in motion.</b><p>Fluid transitions that make the everyday feel extraordinary.</p><span class="feature-arrow">↗</span></article></div></div>
+       <footer class="site-footer"><span>© 2026 FORMA CREATIVE STUDIO</span><span>MADE WITH INTENTION <span class="accent-mark">✳</span></span></footer>
+      </div>
+    </section>
+    <section class="recipe-section"><div class="recipe-main"><div class="recipe-kicker">CURRENT RECIPE <span id="recipeNumber">001</span></div><h3 id="recipeTitle">Midnight Aurora</h3><p id="recipeDescription"></p><div class="recipe-tags" id="recipeTags"></div></div><div class="recipe-actions"><button class="action-primary" id="copyPrompt">✧ Copy coding agent prompt <span>↗</span></button><button class="action-secondary" id="copyCss">{ } Copy CSS tokens</button><button class="action-secondary" id="downloadBtn">↓ Download recipe</button></div></section>
+    <div class="under-note"><span>✳</span> YOUR IDEA, YOUR CANVAS. <span>PREVIEW BUILT WITH PLAIN HTML · CSS · JS</span></div>
+   </div>
+  </main>
+ </div>
+ <div class="toast" id="toast" role="status" aria-live="polite"></div><div class="rail-backdrop" id="railBackdrop"></div>
+</body>
+</html>
